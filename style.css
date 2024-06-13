@@ -1,0 +1,281 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #EDEDED;
+    color: #241882;
+}
+
+.wrapper {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-color: #7393B3;
+    padding: 20px;
+    text-align: center;
+}
+
+header img {
+    max-width: 100px;
+    margin-right: 20px;
+}
+
+header h1 {
+    margin: 0;
+    color: #EDEDED;
+    padding-bottom: 10px;
+}
+
+.nav-item.dropdown .dropdown-menu {
+    background-color: #0E3755;
+}
+
+.nav-item.dropdown .dropdown-menu .dropdown-item {
+    color: #FFFFFF;
+}
+
+.nav-item.dropdown .dropdown-menu .dropdown-item:hover {
+    background-color: #7393B3;
+}
+
+.news-item img {
+    max-width: 100%;
+    border-radius: 8px;
+    display: block;
+    margin: 0 auto 20px;
+    object-fit: cover;
+    height: 200px;
+}
+
+.news-item {
+    background-color: #D44D5C;
+    padding: 15px;
+    border-radius: 8px;
+    box-sizing: border-box;
+    text-align: center;
+    margin-bottom: 20px;
+    transition: background-color 0.3s;
+    overflow: hidden;
+    color: #EDEDED;
+}
+
+.news-item h2,
+.news-item p {
+    color: #EDEDED;
+    margin-bottom: 10px;
+}
+
+.news-item a {
+    font-weight: bold;
+    text-decoration: none;
+    color: #EDEDED;
+}
+
+.news-item a:hover {
+    color: #0E3755;
+}
+
+.main-content {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.news-item:nth-child(odd) {
+    flex-basis: calc(50% - 10px);
+}
+
+.news-item:nth-child(even) {
+    flex-basis: calc(50% - 10px);
+}
+
+footer {
+    background-color: #7393B3;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    position: relative; 
+    bottom: 0;
+    width: 100%; 
+}
+
+footer p {
+    margin: 0;
+}
+
+.forma {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #FFFFFF;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.forma label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.forma input[type="text"],
+.forma input[type="file"],
+.forma textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.forma input[type="submit"],
+.forma input[type="reset"] {
+    width: auto;
+    padding: 10px 20px;
+    margin-top: 10px;
+    background-color: #7393B3;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.forma input[type="submit"]:hover,
+.forma input[type="reset"]:hover {
+    background-color: #0E3755;
+}
+
+.article .news-item {
+    background-color: #D44D5C;
+    padding: 15px;
+    border-radius: 8px;
+    box-sizing: border-box;
+    text-align: center;
+    margin-bottom: 20px;
+    transition: background-color 0.3s;
+    overflow: hidden;
+    height: auto;
+}
+
+.article .news-item img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    display: block;
+    margin: 0 auto;
+}
+
+.article .news-item h2,
+.article .news-item p {
+    color: #EDEDED;
+    margin-bottom: 10px;
+}
+
+section {
+    padding: 20px;
+}
+
+section.slika img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    padding-top: 20px;
+}
+
+section h1 {
+    font-weight: bold;
+}
+
+#prijava {
+    margin-top: 30px;
+}
+
+#registracija {
+    width: 100%;
+}
+
+#registracija h2 {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #0E3755;
+}
+
+.form-item {
+    margin-bottom: 20px;
+}
+
+.form-item label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.form-item .form-field {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-item input[type="text"],
+.form-item input[type="password"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.form-item .bojaPoruke {
+    color: red;
+    font-size: 0.875rem;
+}
+
+.form-item button {
+    background-color: #7393B3;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.form-item button:hover {
+    background-color: #0E3755;
+}
+
+.gumb {
+    background-color: #7393B3;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none; 
+    display: inline-block; 
+    margin: 0 auto; 
+    max-width: fit-content;
+    margin-top: 20px;
+}
+
+.gumb:hover {
+    background-color: #0E3755;
+    text-decoration: none; 
+}
+
+.porukaPrijave {
+    font-size: 1.5em;
+    text-align: center; 
+    margin-top: auto; 
+}
+  
+.porukaPogreske {
+    font-size: 1.5em; 
+    text-align: center; 
+    margin: auto;
+}
